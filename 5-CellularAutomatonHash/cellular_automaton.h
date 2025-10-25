@@ -10,8 +10,8 @@
 #include <sstream>
 #include <iomanip>
 #include <bitset>
+#include <cstdint>
 #include <iostream>
-
 
 class CellularAutomaton {
 private:

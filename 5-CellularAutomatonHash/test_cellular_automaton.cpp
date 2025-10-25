@@ -1,8 +1,10 @@
 //
 // Created by abdelaziz on 10/25/2025.
 //
+
+#include "cellular_automaton.h"
 #include <iostream>
-#include "test_cellular_automaton.cpp"
+#include <cstdint>
 
 // 1.3. Test that the automaton correctly reproduces the chosen rule
 void test_rule30() {
