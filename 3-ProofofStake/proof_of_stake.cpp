@@ -3,7 +3,7 @@
 //
 
 #include "proof_of_stake.h"
-#include "../ProofofStake/proof_of_work.h"
+#include "../2-ProofofWork/proof_of_work.h"
 #include <iostream>
 #include <chrono>
 
