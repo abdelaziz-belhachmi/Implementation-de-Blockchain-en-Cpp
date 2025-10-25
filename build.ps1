@@ -6,7 +6,15 @@ Write-Host "Building Blockchain Project..." -ForegroundColor Green
 $CXX = "g++"
 $CXXFLAGS = "-std=c++11 -Wall -Wextra"
 $INCLUDES = "-I1-ArbredeMerkle -I2-ProofofWork -I3-ProofofStake -I4-BlockchainComplete"
+
+# OpenSSL paths (adjust if OpenSSL is installed elsewhere)
+$OPENSSL_INCLUDE = "-IC:\Program Files\OpenSSL-Win64\include"
+$OPENSSL_LIB = "-LC:\Program Files\OpenSSL-Win64\lib"
 $LDFLAGS = "-lssl -lcrypto"
+
+# Combine all includes
+$ALL_INCLUDES = "$INCLUDES $OPENSSL_INCLUDE"
+$ALL_LDFLAGS = "$OPENSSL_LIB $LDFLAGS"
 
 # Build Merkle Tree
 Write-Host "`nCompiling Merkle Tree..." -ForegroundColor Cyan
